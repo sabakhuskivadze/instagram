@@ -3,7 +3,7 @@ import style from './page.module.scss'
 interface Props{
     type:string
     placeholder:string
-    value?:()=> void
+    value?:(event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export default function Input(props:Props){

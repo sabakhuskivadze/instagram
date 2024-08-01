@@ -5,15 +5,16 @@ import Input from '../components/input/page'
 import style from './page.module.scss'
 import axios from 'axios'
 import { Button, message, Space } from 'antd';
+
 export default function Login() {
     const [userinfo, setUserinfo] = useState('')
     const [pass,setPass] = useState('')
     const [messageApi, contextHolder] = message.useMessage();
-    const text1 = (e:any) => {
+    const text1 = (e:React.ChangeEvent<HTMLInputElement>) => {
         setUserinfo(e.target.value)
     }
 
-    const text2 = (e:any) => {
+    const text2 = (e:React.ChangeEvent<HTMLInputElement>) => {
         setPass(e.target.value)
     } 
 
@@ -37,6 +38,7 @@ export default function Login() {
                 });
         })
     }
+
 
     return(
         <>
