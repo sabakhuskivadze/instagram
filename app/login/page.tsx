@@ -61,8 +61,8 @@ export default function Login() {
         </div>
 
         <div className={style.imgGroup}>
-            <img className={style.photoApp} src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/Yfc020c87j0.png" alt="" />
-            <img className={style.photoApp} src="	https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="" />
+            <img width={134} height={40} src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/Yfc020c87j0.png" alt="asdasd" />
+            <img width={134} height={40} src="	https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="dasd" />
         </div>
         </>
     )
