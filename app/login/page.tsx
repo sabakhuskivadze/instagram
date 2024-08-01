@@ -9,11 +9,11 @@ export default function Login() {
     const [userinfo, setUserinfo] = useState('')
     const [pass,setPass] = useState('')
     const [messageApi, contextHolder] = message.useMessage();
-    const text1 = (e) => {
+    const text1 = (e:any) => {
         setUserinfo(e.target.value)
     }
 
-    const text2 = (e) => {
+    const text2 = (e:any) => {
         setPass(e.target.value)
     } 
 
