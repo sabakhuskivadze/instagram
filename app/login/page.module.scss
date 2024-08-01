@@ -1,0 +1,86 @@
+.title{
+    background-image: url('../img/instagram\ 1.png');
+    width: 194px;
+    height: 51px;
+    background-repeat: no-repeat;
+    margin: auto;
+
+}
+
+.instagram{
+ max-width: 350px;
+ height: 409px;
+ border:1px solid rgb(219, 219, 219);
+ margin: auto;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.line{
+    background-image: url('../img/line.png');
+    width: 330px;
+    height: 18px;
+    margin: auto;
+}
+.passForgot{
+    color: rgb( 0, 55, 107 );
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.dontAcc{
+    max-width: 350px;
+    height: 63px;
+    border:1px solid rgb(219, 219, 219);
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+
+.noAccText{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    margin: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.span1{
+    color: rgb(0, 149, 246)
+}
+
+
+.photoApp{
+    width: 134px;
+    height: 40px;
+}
+
+.imgGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    top: 55px;
+}
