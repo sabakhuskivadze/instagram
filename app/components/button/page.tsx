@@ -1,14 +1,15 @@
-import style from './page.module.scss'
+import React from 'react';
+import style from './page.module.scss';
 
-interface Props{
-    title:string
-    click?:() => void
+interface Props {
+  title: string;
+  click?: () => void;
 }
 
-export default function Btn(props:Props){
-    return(
-        <>
-        <button onClick={props.click} className={style.btn}>{props.title}</button>
-        </>
-    )
-}
+const Btn: React.FC<Props> = ({ title, click }) => (
+  <button onClick={click} className={style.btn}>
+    {title}
+  </button>
+);
+
+export default Btn;
