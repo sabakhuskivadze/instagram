@@ -56,7 +56,8 @@ export default function Login() {
 
         <div className={style.dontAcc}>
             <div className={style.card2}>
-                <p className={style.noAccText}>Don't have an account? <span className={style.span1}>Sign up</span></p>
+            <p className={style.noAccText}>Don&apos;t have an account? <span className={style.span1}>Sign up</span></p>
+
             </div>
         </div>
 
