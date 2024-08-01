@@ -1,6 +1,5 @@
 "use client"
 import { useState } from 'react'
-import Input from '../components/input/page'
 import style from './page.module.scss'
 import axios from 'axios'
 import { Button, message, Space } from 'antd';
@@ -48,8 +47,8 @@ export default function Login() {
             <div className={style.card}>
                 <div className={style.title}></div>
                 <div className={style.inputGroup}>
-                    <Input value={text1} type={'text'} placeholder={'Phone number, username, or email'}/>
-                    <Input value={text2} type={'password'} placeholder={'Password'}/>
+                    <input onChange={text1} className={style.inputInstagram} type="text" placeholder='Enter your Email,username,Phonenumber' />
+                    <input onChange={text2} className={style.inputInstagram} type="password" placeholder='Password' />
                 </div>
                <button onClick={click} className={style.btn1}>Log In</button>
                 <div className={style.line}></div>
