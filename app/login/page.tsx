@@ -1,6 +1,5 @@
 "use client"
 import { useState } from 'react'
-import Btn from '../components/button/page'
 import Input from '../components/input/page'
 import style from './page.module.scss'
 import axios from 'axios'
@@ -40,7 +39,7 @@ export default function Login() {
     }
 
 
-    
+
 
     return(
         <>
@@ -52,7 +51,7 @@ export default function Login() {
                     <Input value={text1} type={'text'} placeholder={'Phone number, username, or email'}/>
                     <Input value={text2} type={'password'} placeholder={'Password'}/>
                 </div>
-                <Btn click={click} title={'Login In'}/>
+               <button onClick={click} className={style.btn1}>Log In</button>
                 <div className={style.line}></div>
                 <p className={style.passForgot}>Forgot password?</p>
             </div>
