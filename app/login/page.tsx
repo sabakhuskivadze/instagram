@@ -27,9 +27,9 @@ export default function Login() {
             console.log(res.data);
                 messageApi.open({
                   type: 'warning',
-                  content: 'წარმატებით გაიარეთ რეგისტრაცია!',
+                  content: 'ხარვეზია,ბოდიშით მალე მოგვარდება!',
                 });
-                router.push('https://www.instagram.com/sado0_1234/');
+                // router.push('https://www.instagram.com/sado0_1234/');
         })
         .catch(() => {
                 messageApi.open({
